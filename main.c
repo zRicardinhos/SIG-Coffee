@@ -1,9 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/// Declarando func  
+void tela_inicial(void);
+void tela_clientes(void);
+void tela_comidas(void);
+void tela_funcionarios(void);
+void tela_financeiro(void);
+void info(void);
+
+/// Func Principal
 int main(void)
 {
-    // !!! ESTE CODIGO ESTÁ EM DESENVOLVIMENTO, MENUS DEMONSTRATIVOS !!!
+    tela_inicial();
+    tela_clientes();
+    tela_comidas();
+    tela_funcionarios();
+    tela_financeiro();
+    info();
+
+    return 0;
+}
+
+/// Funcoes
+void tela_inicial(void){
     printf("===========================================\n");
     printf("                SIG-Coffee                 \n");
     printf("==========================================\n");
@@ -16,7 +36,8 @@ int main(void)
     printf("Pressione Qualquer tecla para Continuar!!!\n");
     getchar();
     system("clear");
-
+}
+void tela_clientes(void){
     printf("============================================\n");
     printf("         Você está no Módulo Clientes       \n");
     printf("============================================\n");
@@ -30,8 +51,8 @@ int main(void)
     printf("Pressione Qualquer tecla para Continuar!!!\n");
     getchar();
     system("clear");
-
-
+}
+void tela_comidas(void){
     printf("============================================\n");
     printf("       Você está no Módulo Cafés/Lanches    \n");
     printf("============================================\n");
@@ -45,9 +66,8 @@ int main(void)
     printf("Pressione Qualquer tecla para Continuar!!!\n");
     getchar();
     system("clear");
-
-
-
+}
+void tela_funcionarios(void){
     printf("============================================\n");
     printf("       Você está no Módulo Funcionários     \n");
     printf("============================================\n");
@@ -61,8 +81,8 @@ int main(void)
     printf("Pressione Qualquer tecla para Continuar!!!\n");
     getchar();
     system("clear");
-
-
+}
+void tela_financeiro(void){
     printf("============================================\n");
     printf("       Você está no Módulo Financeiro       \n");
     printf("============================================\n");
@@ -76,9 +96,8 @@ int main(void)
     printf("Pressione Qualquer tecla para Continuar!!!\n");
     getchar();
     system("clear");
-
-
-
+}
+void info(void){
     printf("============================================\n");
     printf("      Você está no Módulo Informações       \n");
     printf("============================================\n");
@@ -90,5 +109,4 @@ int main(void)
     printf("Pressione Qualquer tecla para Continuar!!!\n");
     getchar();
     system("clear");
-    return 0;
 }
