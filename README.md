@@ -7,6 +7,9 @@
 - **Cadastro de Produtos**: Adicione, remova e edite produtos no cardápio.
 - **Gerenciamento de Pedidos**: Registre e acompanhe os pedidos dos clientes.
 - **Relatórios de Vendas**: Gere relatórios diários com o resumo de vendas e estoque.
+- **Gerenciamento Financeiro**: Controle financeiro e relatórios.
+- **Gerenciamento de Funcionarios**: Gerencie os funcionarios que trabalham na empresa.
+
 
 
 ## Como executar
