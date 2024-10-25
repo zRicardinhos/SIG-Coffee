@@ -27,17 +27,17 @@ void modulo_clientes(void){
 //Tela clientes
 char tela_clientes(void){
     char op;
-    printf("============================================\n");
-    printf("         Você está no Módulo Clientes       \n");
-    printf("============================================\n");
-    printf("      [1] - Cadastrar Clientes      \n");
-    printf("      [2] - Consultar Cliente       \n");
-    printf("      [3] - Atualizar Cliente       \n");
-    printf("      [4] - Desativar Cliente       \n");
-    printf("      [5] - Relatório de Clientes   \n");
-    printf("      [0] - Voltar                  \n");
-    printf("============================================\n");
-    printf("   Por favor, selecione uma opção: \n");
+    printf("╔═══════════════════════════════════════════╗\n");
+    printf("║        Você está no Módulo Clientes 👥    ║\n");
+    printf("╠═══════════════════════════════════════════╣\n");
+    printf("║      [1] - Cadastrar Clientes             ║\n");
+    printf("║      [2] - Consultar Cliente              ║\n");
+    printf("║      [3] - Atualizar Cliente              ║\n");
+    printf("║      [4] - Desativar Cliente              ║\n");
+    printf("║      [5] - Relatório de Clientes          ║\n");
+    printf("║      [0] - Voltar                         ║\n");
+    printf("╚═══════════════════════════════════════════╝\n");
+    printf("     🌟 Por favor, selecione uma opção 🌟:   \n");
     
     scanf("%c",&op);
     getchar();
@@ -46,9 +46,9 @@ char tela_clientes(void){
 }
 //SUB-telas clientes
 void cadastrar_cliente(void){
-    printf("===========================================\n");
-    printf("              Cadastro de Cliente               \n");
-    printf("==========================================\n");
+    printf("╔═══════════════════════════════════════════╗\n");
+    printf("║              Cadastro de Cliente          ║\n");
+    printf("╚═══════════════════════════════════════════╝\n");
     printf("\n      Nome completo: ");
     printf("\n      Celular(Apenas numeros): ");
     printf("\n      E-mail: ");
@@ -59,30 +59,32 @@ void cadastrar_cliente(void){
     system("clear");
 }
 void consultar_cliente(void){
-    printf("===========================================\n");
-    printf("              Consulta de Cliente               \n");
-    printf("==========================================\n");
-    printf("\n      CPF: ");
+    printf("╔═══════════════════════════════════════════╗\n");
+    printf("║              Consulta de Cliente          ║\n");
+    printf("╚═══════════════════════════════════════════╝\n");
+    printf("      CPF: \n");
     printf("Pressione Qualquer tecla para Continuar!!!\n");
     getchar();
     system("clear");
 }
 void atualizar_cliente(void){
-    printf("===========================================\n");
-    printf("              Atualizar Cliente               \n");
-    printf("==========================================\n");
-    printf("\n      CPF: ");
-    printf("\n      Novas Infos: ");
+    printf("╔═══════════════════════════════════════════╗\n");
+    printf("║              Atualizar Cliente            ║\n");
+    printf("╚═══════════════════════════════════════════╝\n");
+    printf("      CPF: \n");
+    printf("      Novas Infos: \n");
     printf("Pressione Qualquer tecla para Continuar!!!\n");
     getchar();
     system("clear");
 }
 void desativar_cliente(void){
-    printf("===========================================\n");
-    printf("              Desativar Cliente               \n");
-    printf("==========================================\n");
-    printf("\n      CPF: ");
-    printf("\n      Cliente desativado(a) com sucesso!  ");
+    printf("╔═══════════════════════════════════════════╗\n");
+    printf("║              Desativar Cliente            ║\n");
+    printf("╚═══════════════════════════════════════════╝\n");
+    printf("     CPF: \n");
+    //Exemplo
+    printf("     Cliente desativado(a) com sucesso!  \n");
+    //Exemplo
     printf("Pressione Qualquer tecla para Continuar!!!\n");
     getchar();
     system("clear");

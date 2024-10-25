@@ -40,31 +40,35 @@ int main(void)
 /// tela principal
 char tela_inicial(void){
     char op;
-    printf("===========================================\n");
-    printf("                SIG-Coffee                 \n");
-    printf("==========================================\n");
-    printf("      [1] - Módulo Clientes      \n");
-    printf("      [2] - Módulo Cafés/Lanches \n");
-    printf("      [3] - Módulo Funcionários  \n");
-    printf("      [4] - Módulo Financeiro    \n");
-    printf("      [5] - Módulo Informações   \n");
-    printf("      [0] - Sair                 \n");
-    printf("DIGITE A OPÇAO DESEJADA !!!\n");
+    // A barra esta alinhada, esta deste jeito por causa do emoji
+    printf("╔═══════════════════════════════════════════╗\n");
+    printf("║              ☕ SIG-Coffee ☕             ║\n");
+    printf("╠═══════════════════════════════════════════╣\n");
+    printf("║        [1] - Módulo Clientes              ║\n");
+    printf("║        [2] - Módulo Cafés/Lanches         ║\n");
+    printf("║        [3] - Módulo Funcionários          ║\n");
+    printf("║        [4] - Módulo Financeiro            ║\n");
+    printf("║        [5] - Módulo Informações           ║\n");
+    printf("║        [0] - Sair                         ║\n");
+    printf("╚═══════════════════════════════════════════╝\n");
+    printf("     🌟 Por favor, selecione uma opção 🌟:  \n");
+
     scanf("%c",&op);
     getchar();
     system("clear");
     return op;
 }
 void info(void){
-    printf("============================================\n");
-    printf("      Você está no Módulo Informações       \n");
-    printf("============================================\n");
-    printf("      Projeto de Gestão de uma Cafeteria    \n");
-    printf("      Equipe de desenvolvimento:            \n");
-    printf("      Ricardo Addario @zRicardinhos         \n");
-    printf("      Licença Pública Geral GNU             \n");
-    printf("      www.gnu.org/licenses/gpl.html         \n");
-    printf("Pressione Qualquer tecla para Continuar!!!\n");
+    printf("╔═══════════════════════════════════════════╗\n");
+    printf("║     Você está no Módulo Informações  ℹ️    ║\n");
+    printf("╠═══════════════════════════════════════════╣\n");
+    printf("║     Projeto de Gestão de uma Cafeteria    ║\n");
+    printf("║      Equipe de desenvolvimento:           ║\n");
+    printf("║      Ricardo Addario @zRicardinhos        ║\n");
+    printf("║      Licença Pública Geral GNU            ║\n");
+    printf("║      www.gnu.org/licenses/gpl.html        ║\n");
+    printf("╚═══════════════════════════════════════════╝\n");
+    printf("🌟 Pressione Qualquer tecla para Continuar 🌟\n");
     getchar();
     system("clear");
 }
