@@ -37,7 +37,8 @@ char tela_clientes(void){
     printf("      [5] - Relatório de Clientes   \n");
     printf("      [0] - Voltar                  \n");
     printf("============================================\n");
-    printf("DIGITE A OPÇAO DESEJADA !!!\n");
+    printf("   Por favor, selecione uma opção: \n");
+    
     scanf("%c",&op);
     getchar();
     system("clear");

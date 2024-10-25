@@ -40,7 +40,8 @@ char tela_comidas(void){
     printf("      [5] - Lanches        \n");
     printf("      [0] - Voltar                   \n");
     printf("============================================\n");
-    printf("DIGITE A OPÇAO DESEJADA !!!\n");
+    printf("   Por favor, selecione uma opção: \n");
+    
     scanf("%c",&op);
     getchar();
     system("clear");

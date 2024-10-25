@@ -43,12 +43,12 @@ char tela_inicial(void){
     printf("===========================================\n");
     printf("                SIG-Coffee                 \n");
     printf("==========================================\n");
-    printf("      1 - Módulo Clientes      \n");
-    printf("      2 - Módulo Cafés/Lanches \n");
-    printf("      3 - Módulo Funcionários  \n");
-    printf("      4 - Módulo Financeiro    \n");
-    printf("      5 - Módulo Informações   \n");
-    printf("      0 - Sair                 \n");
+    printf("      [1] - Módulo Clientes      \n");
+    printf("      [2] - Módulo Cafés/Lanches \n");
+    printf("      [3] - Módulo Funcionários  \n");
+    printf("      [4] - Módulo Financeiro    \n");
+    printf("      [5] - Módulo Informações   \n");
+    printf("      [0] - Sair                 \n");
     printf("DIGITE A OPÇAO DESEJADA !!!\n");
     scanf("%c",&op);
     getchar();

@@ -11,10 +11,10 @@ void modulo_financeiro(void){
             registrar_despesa();
                 break;
             case '2':
-            registrar_ganho();
+            saldo_atual();
                 break;
             case '3':
-            consultar_financas();
+            registrar_ganho();
                 break;
             case '4':
             relatorio_financeiro();
