@@ -33,12 +33,12 @@ char tela_comidas(void){
     printf("============================================\n");
     printf("       Você está no Módulo Cafés/Lanches    \n");
     printf("============================================\n");
-    printf("      1 - Cadastrar Tipo de Café   \n");
-    printf("      2 - Consultar Cafés          \n");
-    printf("      3 - Atualizar Café           \n");
-    printf("      4 - Remover Café             \n");
-    printf("      5 - Submódulo Lanches        \n");
-    printf("      0 - Voltar                   \n");
+    printf("      [1] - Cadastrar Tipo de Café   \n");
+    printf("      [2] - Consultar Cafés          \n");
+    printf("      [3] - Atualizar Café           \n");
+    printf("      [4] - Remover Café             \n");
+    printf("      [5] - Lanches        \n");
+    printf("      [0] - Voltar                   \n");
     printf("============================================\n");
     printf("DIGITE A OPÇAO DESEJADA !!!\n");
     scanf("%c",&op);
@@ -90,7 +90,7 @@ void remover_cafe(void){
 }
 void submodulo_lanches(void){
     printf("===========================================\n");
-    printf("              Submódulo Lanches               \n");
+    printf("                 Lanches                 \n");
     printf("==========================================\n");
     printf("\n      1 - Cadastrar Lanche: ");
     printf("\n      2 - Atualizar Lanche: ");

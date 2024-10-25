@@ -30,12 +30,12 @@ char tela_clientes(void){
     printf("============================================\n");
     printf("         Você está no Módulo Clientes       \n");
     printf("============================================\n");
-    printf("      1 - Cadastrar Clientes      \n");
-    printf("      2 - Consultar Cliente       \n");
-    printf("      3 - Atualizar Cliente       \n");
-    printf("      4 - Desativar Cliente       \n");
-    printf("      5 - Relatório de Clientes   \n");
-    printf("      0 - Voltar                  \n");
+    printf("      [1] - Cadastrar Clientes      \n");
+    printf("      [2] - Consultar Cliente       \n");
+    printf("      [3] - Atualizar Cliente       \n");
+    printf("      [4] - Desativar Cliente       \n");
+    printf("      [5] - Relatório de Clientes   \n");
+    printf("      [0] - Voltar                  \n");
     printf("============================================\n");
     printf("DIGITE A OPÇAO DESEJADA !!!\n");
     scanf("%c",&op);

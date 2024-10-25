@@ -19,9 +19,6 @@ void modulo_financeiro(void){
             case '4':
             relatorio_financeiro();
                 break;
-            case '5':
-            submodulo_vendas();
-                break;
         }
     }
     while(opcao != '0');
@@ -32,14 +29,14 @@ char tela_financeiro(void){
     printf("============================================\n");
     printf("       Você está no Módulo Financeiro       \n");
     printf("============================================\n");
-    printf("      1 - Registrar Despesa           \n");
-    printf("      2 - Consultar Finanças          \n");
-    printf("      3 - Registrar Ganho           \n");
-    printf("      4 - Relatório Financeiro        \n");
-    printf("      5 - Submódulo Vendas            \n");
-    printf("      0 - Voltar                      \n");
+    printf("   [1] - Registrar Nova Despesa             \n");
+    printf("   [2] - Visualizar Saldo Atual             \n");
+    printf("   [3] - Registrar Novo Ganho/Lucro         \n");
+    printf("   [4] - Gerar Relatório Financeiro         \n");
+    printf("   [0] - Voltar ao Menu Principal           \n");
     printf("============================================\n");
-    printf("DIGITE A OPÇAO DESEJADA !!!\n");
+    printf("   Por favor, selecione uma opção: \n");
+
     scanf("%c",&op);
     getchar();
     system("clear");
@@ -49,7 +46,7 @@ char tela_financeiro(void){
 // SUBMODULOS FINANCEIRO
 void registrar_despesa(void){
     printf("===========================================\n");
-    printf("              Registrar Despesa             \n");
+    printf("            Registrar Nova Despesa             \n");
     printf("==========================================\n");
     printf("\n      Descrição da despesa: ");
     printf("\n      Valor: ");
@@ -59,7 +56,7 @@ void registrar_despesa(void){
 }
 void registrar_ganho(void){
     printf("===========================================\n");
-    printf("              Registrar Ganho               \n");
+    printf("              Registrar novo Ganho/lucro        \n");
     printf("==========================================\n");
     printf("\n      Descrição do ganho: ");
     printf("\n      Valor: ");
@@ -67,11 +64,11 @@ void registrar_ganho(void){
     getchar();
     system("clear");
 }
-void consultar_financas(void){
+void saldo_atual(void){
     printf("===========================================\n");
-    printf("              Consultar Finanças               \n");
+    printf("            Visualizar Saldo Atual           \n");
     printf("==========================================\n");
-    printf("\n      Relatório de transações: ");
+    printf("\n      Saldo atual: ");
     printf("Pressione Qualquer tecla para Continuar!!!\n");
     getchar();
     system("clear");
@@ -81,16 +78,6 @@ void relatorio_financeiro(void){
     printf("              Relatório Financeiro               \n");
     printf("==========================================\n");
     printf("\n      Relatório Completo: ");
-    printf("Pressione Qualquer tecla para Continuar!!!\n");
-    getchar();
-    system("clear");
-}
-void submodulo_vendas(void){
-    printf("===========================================\n");
-    printf("              Submódulo Vendas               \n");
-    printf("==========================================\n");
-    printf("\n      1 - Registrar Venda: ");
-    printf("\n      2 - Relatório de Vendas: ");
     printf("Pressione Qualquer tecla para Continuar!!!\n");
     getchar();
     system("clear");

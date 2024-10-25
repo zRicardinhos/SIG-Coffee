@@ -30,12 +30,12 @@ char tela_funcionarios(void){
     printf("============================================\n");
     printf("       Você está no Módulo Funcionários     \n");
     printf("============================================\n");
-    printf("      1 - Cadastrar Funcionário         \n");
-    printf("      2 - Consultar Funcionários         \n");
-    printf("      3 - Atualizar Funcionário         \n");
-    printf("      4 - Remover Funcionário           \n");
-    printf("      5 - Relatório de Funcionários     \n");
-    printf("      0 - Voltar                        \n");
+    printf("      [1] - Cadastrar Funcionário         \n");
+    printf("      [2] - Consultar Funcionários         \n");
+    printf("      [3] - Atualizar Funcionário         \n");
+    printf("      [4] - Remover Funcionário           \n");
+    printf("      [5] - Relatório de Funcionários     \n");
+    printf("      [0] - Voltar                        \n");
     printf("============================================\n");
     printf("DIGITE A OPÇAO DESEJADA !!!\n");
     scanf("%c",&op);
