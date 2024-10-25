@@ -18,7 +18,7 @@
 
 2. Compile o código:
     ```bash
-    gcc main.c -o sig-coffee
+    gcc *.c *.h -o sig-coffee
     ```
 
 3. Execute o programa:
