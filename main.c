@@ -4,7 +4,7 @@
 #include "funcionarios.h"
 #include "comidas.h"
 #include "financeiro.h"
-
+#include "pedidos.h"
 /// Assinatura das funções
 char tela_inicial(void);
 void info(void);
@@ -29,6 +29,9 @@ int main(void)
             modulo_financeiro();
                 break;
             case '5':
+            pedidos();
+                break;
+            case '6':
             info();
                 break;
         }
@@ -48,11 +51,12 @@ char tela_inicial(void){
     printf("║        [2] - Módulo Cafés/Lanches         ║\n");
     printf("║        [3] - Módulo Funcionários          ║\n");
     printf("║        [4] - Módulo Financeiro            ║\n");
-    printf("║        [5] - Módulo Informações           ║\n");
+    printf("║        [5] - Pedidos                      ║\n");
+    printf("║        [6] - Módulo Informações           ║\n");
     printf("║        [0] - Sair                         ║\n");
     printf("╚═══════════════════════════════════════════╝\n");
     printf("     🌟 Por favor, selecione uma opção 🌟:  \n");
-
+    
     scanf("%c",&op);
     getchar();
     system("clear");
