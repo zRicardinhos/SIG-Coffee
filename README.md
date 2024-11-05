@@ -19,9 +19,9 @@
     git clone https://github.com/zRicardinhos/SIG-Coffee.git
     ```
 
-2. Compile o código:
+2. Compile o código(Digite isto no terminal):
     ```bash
-    gcc *.c *.h -o sig-coffee
+    make
     ```
 
 3. Execute o programa:

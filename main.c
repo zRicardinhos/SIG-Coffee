@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "clientes.h"
-#include "funcionarios.h"
-#include "comidas.h"
-#include "financeiro.h"
-#include "pedidos.h"
+#include "src/modules/clientes/clientes.h"
+#include "src/modules/funcionarios/funcionarios.h"
+#include "src/modules/comidas/comidas.h"
+#include "src/modules/financeiro/financeiro.h"
+#include "src/modules/pedidos/pedidos.h"
 /// Assinatura das funções
 char tela_inicial(void);
 void info(void);
