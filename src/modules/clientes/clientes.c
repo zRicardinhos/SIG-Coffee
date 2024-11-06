@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "clientes.h"
 
+
 //funcoes do modulo clientes
 void modulo_clientes(void){
     char opcao;
@@ -46,45 +47,55 @@ char tela_clientes(void){
 }
 //SUB-telas clientes
 void cadastrar_cliente(void){
+    char nome[55],email[55],cpf[12],celular[15],data_nasc[15];
     printf("╔═══════════════════════════════════════════╗\n");
     printf("║              Cadastro de Cliente          ║\n");
     printf("╚═══════════════════════════════════════════╝\n");
     printf("\n      Nome completo: ");
+    fgets(nome,sizeof(nome),stdin);
     printf("\n      Celular(Apenas numeros): ");
+    fgets(celular,sizeof(celular),stdin);
     printf("\n      E-mail: ");
+    fgets(email,sizeof(email),stdin);
     printf("\n      CPF: ");
+    fgets(cpf,sizeof(cpf),stdin);
     printf("\n      Data de nascimento: ");
+    fgets(data_nasc,sizeof(data_nasc),stdin);
     printf("Pressione Qualquer tecla para Continuar!!!\n");
     getchar();
     system("clear");
 }
 void consultar_cliente(void){
+    char cpf[12];
     printf("╔═══════════════════════════════════════════╗\n");
     printf("║              Consulta de Cliente          ║\n");
     printf("╚═══════════════════════════════════════════╝\n");
-    printf("      CPF: \n");
-    printf("Pressione Qualquer tecla para Continuar!!!\n");
+    printf("      CPF: ");
+    fgets(cpf,sizeof(cpf),stdin);
+    printf("\n Pressione Qualquer tecla para Continuar!!!\n");
     getchar();
     system("clear");
 }
 void atualizar_cliente(void){
+    char cpf[12];
     printf("╔═══════════════════════════════════════════╗\n");
     printf("║              Atualizar Cliente            ║\n");
     printf("╚═══════════════════════════════════════════╝\n");
-    printf("      CPF: \n");
-    printf("      Novas Infos: \n");
-    printf("Pressione Qualquer tecla para Continuar!!!\n");
+    printf("      CPF: ");
+    fgets(cpf,sizeof(cpf),stdin);
+    printf("\nPressione Qualquer tecla para Continuar!!!\n");
     getchar();
     system("clear");
 }
 void desativar_cliente(void){
+    char cpf[12];
     printf("╔═══════════════════════════════════════════╗\n");
     printf("║              Desativar Cliente            ║\n");
     printf("╚═══════════════════════════════════════════╝\n");
-    printf("     CPF: \n");
+    printf("     CPF: ");
+    fgets(cpf,sizeof(cpf),stdin);
     //Exemplo
-    printf("     Cliente desativado(a) com sucesso!  \n");
-    //Exemplo
+    printf("\n     Cliente desativado(a) com sucesso!  \n");
     printf("Pressione Qualquer tecla para Continuar!!!\n");
     getchar();
     system("clear");
