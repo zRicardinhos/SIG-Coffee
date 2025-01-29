@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "funcionarios.h"
+#include "../utils/validacoes.h"
 
 //NAVEG
 void modulo_funcionarios(void){

@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "pedidos.h"
+#include "../utils/validacoes.h"
 
 //funcoes do modulo pedidos
 void pedidos(void){

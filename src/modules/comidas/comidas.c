@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "comidas.h"
+#include "../utils/validacoes.h"
 
 void modulo_comidas(void){
     char opcao;
@@ -50,23 +51,30 @@ char tela_comidas(void){
 
 //SUB TELAS CAFES/LANCHES
 void cadastrar_cafe(void){
+    char cafe[30],tipo[10],origem[15],moagem[10];
     printf("╔═══════════════════════════════════════════╗\n");
     printf("║              Cadastro de Cafe             ║\n");
     printf("╚═══════════════════════════════════════════╝\n");
-    printf("      Nome do Café: \n");
-    printf("      Tipo de Torra (Claro, Médio, Escuro): \n");
-    printf("      Origem do Café: \n");
-    printf("      Moagem (Grossa, Média, Fina): \n");
+    printf("      Nome do Café: ");
+    fgets(cafe,sizeof(cafe),stdin);
+    printf("\n    Tipo de Torra (Claro, Médio, Escuro): ");
+    fgets(tipo,sizeof(tipo),stdin);
+    printf("\n    Origem do Café: ");
+    fgets(origem,sizeof(origem),stdin);
+    printf("\n    Moagem (Grossa, Média, Fina): ");
+    fgets(moagem,sizeof(moagem),stdin);
     printf("Pressione Qualquer tecla para Continuar!!!\n");
     getchar();
     system("clear");
 }
 void consultar_cafe(void){
+    char cafe[30];
     printf("╔═══════════════════════════════════════════╗\n");
     printf("║              Consulta de Cafe             ║\n");
     printf("╚═══════════════════════════════════════════╝\n");
-    printf("      Nome ou ID do Café: \n");
-    printf("Pressione Qualquer tecla para Continuar!!!\n");
+    printf("      Nome do Café: ");
+    fgets(cafe,sizeof(cafe),stdin);
+    printf("\nPressione Qualquer tecla para Continuar!!!\n");
     getchar();
     system("clear");
 }
@@ -74,7 +82,7 @@ void atualizar_cafe(void){
     printf("╔═══════════════════════════════════════════╗\n");
     printf("║              Atualizar Cafe               ║\n");
     printf("╚═══════════════════════════════════════════╝\n");
-    printf("      Nome ou ID do Café: \n");
+    printf("      Nome do Café: \n");
     printf("      Novas Informações: \n");
     printf("Pressione Qualquer tecla para Continuar!!!\n");
     getchar();
@@ -84,7 +92,7 @@ void remover_cafe(void){
     printf("╔═══════════════════════════════════════════╗\n");
     printf("║                Remover Cafe               ║\n");
     printf("╚═══════════════════════════════════════════╝\n");
-    printf("      Nome ou ID do Café: \n");
+    printf("      Nome do Café: \n");
     printf("Pressione Qualquer tecla para Continuar!!!\n");
     getchar();
     system("clear");

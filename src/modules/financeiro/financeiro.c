@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "financeiro.h"
+#include "../utils/validacoes.h"
 
 void modulo_financeiro(void){
     char opcao;
