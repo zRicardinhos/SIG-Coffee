@@ -22,3 +22,4 @@ void relatorio_clientes(void);
 void formatar_cpf(const char *cpf, char *formatado, size_t tamanho);
 void formatar_celular(const char *celular, char *formatado, size_t tamanho);
 int comparar_clientes(const void *a, const void *b);
+Cliente* buscar_cliente(const char *cpf);
