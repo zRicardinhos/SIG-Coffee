@@ -2,7 +2,7 @@
 
 **SIG-Coffee** é um sistema de gerenciamento de cafeteria escrito em C. O projeto foi desenvolvido para gerenciar uma cafeteria imaginaria.
 
-## Funcionalidades(Mais serão adicionadas)
+## Algumas das Funcionalidades
 
 - **Cadastro de Produtos**: Adicione, remova e edite produtos no cardápio.
 - **Gerenciamento de Pedidos**: Registre e acompanhe os pedidos dos clientes.
