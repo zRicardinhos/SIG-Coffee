@@ -5,9 +5,7 @@
 #include <string.h>
 #include <stdio.h>
 
-// ==========================================================
 // Funções auxiliares
-// ==========================================================
 
 static int gerar_novo_id() {
     FILE *fp = fopen("data/pedidos.dat", "rb");
@@ -74,9 +72,9 @@ void carregar_itens_pedido(int id_pedido) {
     }
 }
 
-// ==========================================================
+
 // Funções principais
-// ==========================================================
+
 
 void pedidos(void) {
     char opcao;

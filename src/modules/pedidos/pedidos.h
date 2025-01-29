@@ -1,6 +1,10 @@
+#ifndef PEDIDOS_H
+#define PEDIDOS_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
 #include "../utils/interface.h"
 #include "../utils/validacoes.h"
 
@@ -41,3 +45,4 @@ Pedido* buscar_pedido_por_id(int id);
 void listar_pedidos_ativos(void);
 void carregar_itens_pedido(int id_pedido);
 
+#endif // PEDIDOS_H

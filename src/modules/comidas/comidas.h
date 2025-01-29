@@ -1,3 +1,6 @@
+#ifndef COMIDAS_H
+#define COMIDAS_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -57,3 +60,5 @@ void remover_lanche(void);
 void salvar_item(ItemComida item, TipoComida tipo);
 void* buscar_item(const char *nome, TipoComida tipo);
 void listar_itens(TipoComida tipo);
+
+#endif // COMIDAS_H
