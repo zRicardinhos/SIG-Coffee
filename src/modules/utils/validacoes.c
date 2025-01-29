@@ -1,5 +1,6 @@
 #include <regex.h>
 #include <ctype.h>
+#include <strings.h>
 #include <string.h>
 #include "validacoes.h"
 
@@ -40,4 +41,19 @@ int validar_telefone(const char *telefone) {
     reti = regexec(&regex, telefone, 0, NULL, 0);
     regfree(&regex);
     return (reti == 0);
+}
+
+int validar_opcoes(const char *input, const char *opcoes) {
+    char lista[100];
+    strcpy(lista, opcoes); // Cria uma cópia modificável
+    
+    char *token = strtok(lista, ",");
+    while (token != NULL) {
+        // Remove espaços e compara (case-insensitive)
+        if (strcasecmp(input, token) == 0) {
+            return 1; // Válido
+        }
+        token = strtok(NULL, ",");
+    }
+    return 0; // Inválido
 }

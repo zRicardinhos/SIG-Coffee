@@ -15,7 +15,7 @@ void cadastrar_cliente(void);
 void consultar_cliente(void);
 void atualizar_cliente(void);
 void desativar_cliente(void);
-int contar_clientes_ativos(void);        
+// Funções auxiliares     
 void remover_nova_linha(char *str);      
 void limpar_buffer(void);  
 void relatorio_clientes(void);
